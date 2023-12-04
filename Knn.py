@@ -18,4 +18,6 @@ xtrain,xtest,ytrain,ytest=train_test_split(x,y,test_size=0.25,random_state=0)
 
 knn.fit(xtrain, ytrain)
 pred=knn.predict(xtest)
-print("the accuracy score = %.2f"%(accuracy_score(ytest, pred)*100))
+print("The accuracy score with k=2 is %.2f"%accuracy_score(ytest, pred))
+
+#The accuracy score with k=2 is 0.97 
